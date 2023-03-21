@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from databricks_auto_ml import DatabricksAutoML
+import uvicorn
 
 app = FastAPI()
 
-# Replace with your actual serving endpoint URL and API token
+#Replace with your actual serving endpoint URL and API token
 serving_endpoint_url = "https://adb-5976771229466627.7.azuredatabricks.net/serving-endpoints/heart-attack/invocations"
 api_token = "dapi1b7700dffe48b29d4d16386bf046c490-3"
 
@@ -74,6 +75,9 @@ async def predict(input_data: InputData):
             ]
         }
     }
-
+    
     predictions = auto_ml.predict(data)
     return {"predictions": predictions}
+
+if __name__ == '__main__':
+    uvicorn.run(app, port=8000, host='0.0.0.0')
