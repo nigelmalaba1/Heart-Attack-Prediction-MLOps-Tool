@@ -1,3 +1,4 @@
+[![Python application test with Github Actions](https://github.com/nigelmalaba1/Heart-Attack-Prediction-MLOps-Tool/actions/workflows/main.yml/badge.svg)](https://github.com/nigelmalaba1/Heart-Attack-Prediction-MLOps-Tool/actions/workflows/main.yml)
 
 # Heart Attack Prediction
 This repository contains a heart attack prediction machine learning tool using Azure Databricks AutoML, FastAPI, and AWS ECR. The tool predicts the likelihood of a heart attack based on user input.
