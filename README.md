@@ -118,6 +118,7 @@ There are two API endpoints:
 
 Example input for the /predict endpoint:
 
+```json
 {
   "age": 63,
   "sex": 1,
