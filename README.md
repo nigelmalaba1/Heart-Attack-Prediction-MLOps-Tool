@@ -17,8 +17,8 @@ This repository contains a heart attack prediction machine learning tool using A
 
 1. Clone the repository
 
-  `git clone https://github.com/yourusername/fake-news-detection-api.git`
-  `cd fake-news-detection-api`
+  `git clone https://github.com/nigelmalaba1/Heart-Attack-Prediction-MLOps-Tool.git`
+  `cd <heartattack dir>`
 
 2. Install Python libraries
 
